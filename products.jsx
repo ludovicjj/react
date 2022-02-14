@@ -94,9 +94,10 @@ class ProductTable extends React.Component {
     }
 }
 
-class ProductRow extends React.Component {
+class ProductRow extends React.PureComponent {
     render() {
         const product = this.props.product
+        console.log('Render products');
         return <tr className={product.stocked === false ? 'out' : ''}>
             <td>{product.name}</td>
             <td>{product.price}</td>
@@ -106,7 +107,7 @@ class ProductRow extends React.Component {
 
 class ProductCategoryRow extends React.Component {
     render() {
-        const category = this.props.category
+        const category = this.props.category;
         return <tr>
             <td colSpan="2" className="table-active">{category}</td>
         </tr>
