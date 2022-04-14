@@ -16,7 +16,7 @@ function ComposantA () {
 
     // Ici lorsque le composant est monté :
     // 1. modification du titre de la page.
-    // 2. A chaque fois que "state" change, le titre de la page sera mis à jour
+    // 2. À chaque fois que "state" change, le titre de la page sera mis à jour
     React.useEffect(() => {
         document.title = 'count: ' + state;
     }, [state])
@@ -47,14 +47,34 @@ function ComposantB () {
     return <button >Valeur : {state}</button>
 }
 
+// Comportement du "useEffect" avec et sans dépendance :
+// 1. Si aucune dépendance n'est fourni :
+// le "useEffect" se lance lors du montage du composant.
+// À chaque modification de l'état le "useEffect" se relance (equivalent a un componentDidUpdate => true)
+
+// 2. Si un tableau vide de dépendance est fourni :
+// le "useEffect" se lance lors du montage du composant.
+// À chaque modification de l'état le "useEffect" NE SE RELANCE PAS (equivalent a un componentDidUpdate => false)
+
+// 3. Si un tableau de dépendance est fourni et contient "state" (dans ce cas):
+// le "useEffect" se lance lors du montage du composant.
+// À chaque fois que "state" change de valeur (dans ce cas lors d'un click) le "useEffect" se relance
+function ComposantC () {
+    const [state, setState] = React.useState(0);
+
+    const handleChange = function() {
+        setState(state => state + 1);
+    }
+
+    React.useEffect(() => {
+        console.log('component mount')
+    })
+    return <button onClick={handleChange}>Valeur : {state}</button>
+}
+
 ReactDOM.render(
     <div>
-        <ComposantB/>
+        <ComposantC/>
     </div>,
     document.querySelector('#app')
 )
-
-// démonte le composant ComposantB au bout de 2 secondes
-window.setTimeout(() => {
-    ReactDOM.render(<div>Hello</div>, document.querySelector('#app'))
-}, 2000)
