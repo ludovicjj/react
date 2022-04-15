@@ -10,3 +10,5 @@ Création d’un [tableau de données de produits](products.jsx) proposant filtr
 ## Hooks
 - [useState](useState.jsx) permet d'ajouter un état local pour les composants sous forme de fonction.
 - [useEffect](useEffect.jsx) permet aux fonctions composants de gérer des effets de bord. Il joue le même rôle que componentDidMount, componentDidUpdate, et componentWillUnmount dans les classes React
+- [useMemo](useMemo.jsx) recalculera la valeur mémorisée seulement si une des entrées a changé. Cette optimisation permet d’éviter des calculs coûteux à chaque rendu.
+- [useCallback](useCallback.jsx) recalculera la function mémorisée seulement si une des entrées a changé. Cette optimisation permet d’éviter des calculs coûteux à chaque rendu.
