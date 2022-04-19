@@ -1,4 +1,7 @@
 // useEffect
+// Le code dans le "useEffect" est asynchrone :
+// (Le code à l'intérieur du hook ne sera pas exécuté avant que le rendu de nos changements soit fait)
+// Si on a des opérations lourdes dans le "useEffect", cela n'affectera pas le temps de rendu
 // Équivalent à componentDidMount, componentDidUpdate, componentWillUnmount dans les components sous forme de class.
 function ComposantA () {
     const [state, setState] = React.useState(0);

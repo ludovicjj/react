@@ -13,4 +13,6 @@ Création d’un [tableau de données de produits](products.jsx) proposant filtr
 - [useMemo](useMemo.jsx) recalculera la valeur mémorisée seulement si une des entrées a changé. Cette optimisation permet d’éviter des calculs coûteux à chaque rendu.
 - [useCallback](useCallback.jsx) recalculera la function mémorisée seulement si une des entrées a changé. Cette optimisation permet d’éviter des calculs coûteux à chaque rendu.
 - [useRef](useRef.jsx) initialise une valeur qui persistera tout le long du cycle de vie du composant et qui fera référence a
-  un node du DOM, généralement des champs non contrôlés par REACT  
+  un node du DOM, généralement des champs non contrôlés par REACT
+- [useLayoutEffect](useLayoutEffect.jsx) permet de modifier le DOM avant le rendu, car s’exécute de manière synchrone. Sa signature
+ est identique à "useEffect"
