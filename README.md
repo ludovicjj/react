@@ -9,10 +9,10 @@ Création d’un [tableau de données de produits](products.jsx) proposant filtr
 
 ## Hooks
 - [useState](useState.jsx) permet d'ajouter un état local pour les composants sous forme de fonction.
-- [useEffect](useEffect.jsx) permet aux fonctions composants de gérer des effets de bord. Il joue le même rôle que componentDidMount, componentDidUpdate, et componentWillUnmount dans les classes React
+- [useEffect](useEffect.jsx) permet aux composants sous forme de fonction de gérer des effets de bord. Il joue le même rôle que componentDidMount, componentDidUpdate, et componentWillUnmount dans les classes React
 - [useMemo](useMemo.jsx) recalculera la valeur mémorisée seulement si une des entrées a changé. Cette optimisation permet d’éviter des calculs coûteux à chaque rendu.
 - [useCallback](useCallback.jsx) recalculera la function mémorisée seulement si une des entrées a changé. Cette optimisation permet d’éviter des calculs coûteux à chaque rendu.
 - [useRef](useRef.jsx) initialise une valeur qui persistera tout le long du cycle de vie du composant et qui fera référence a
   un node du DOM, généralement des champs non contrôlés par REACT
-- [useLayoutEffect](useLayoutEffect.jsx) permet de modifier le DOM avant le rendu, car s’exécute de manière synchrone. Sa signature
- est identique à "useEffect"
+- [useLayoutEffect](useLayoutEffect.jsx) permet de modifier le DOM avant le rendu, car s’exécute de manière synchrone. Sa signature est identique à "useEffect"
+- [useReducer](useReducer.jsx) est souvent préférable à useState quand vous avez une logique d’état local complexe qui comprend plusieurs sous-valeurs, ou quand l’état suivant dépend de l’état précédent.
