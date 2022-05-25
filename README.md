@@ -16,3 +16,6 @@ Création d’un [tableau de données de produits](products.jsx) proposant filtr
   un node du DOM, généralement des champs non contrôlés par REACT
 - [useLayoutEffect](useLayoutEffect.jsx) permet de modifier le DOM avant le rendu, car s’exécute de manière synchrone. Sa signature est identique à "useEffect"
 - [useReducer](useReducer.jsx) est souvent préférable à useState quand vous avez une logique d’état local complexe qui comprend plusieurs sous-valeurs, ou quand l’état suivant dépend de l’état précédent.
+## Context
+- [Le Contexte](context.jsx) offre un moyen de partager des valeurs comme celles-ci entre des composants sans avoir à explicitement passer une prop à chaque niveau de l’arborescence. Peut être utilisé pour des composants sous forme de **fonction** et de **class**
+- [documentation des context](https://fr.reactjs.org/docs/context.html#gatsby-focus-wrapper)
