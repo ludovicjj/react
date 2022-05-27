@@ -1,3 +1,7 @@
 tr.out {
     color: #dd2424;
 }
+.tab-container {
+    padding: 1rem;
+    background-color: rgba(0,0,0,.2);
+}

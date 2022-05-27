@@ -23,3 +23,6 @@ Création d’un [tableau de données de produits](products.jsx) proposant filtr
 ## Les portails
 - [Les portails](portal.jsx) fournissent une excellente solution pour afficher des composants enfants dans un nœud DOM qui existe en dehors de la hiérarchie DOM du composant parent.
 - [documentation des portails](https://fr.reactjs.org/docs/portals.html)
+
+## Manipuler les enfants
+- [manipuler les composants enfants](children.jsx) dans React grâce aux méthodes **React.Children.toArray()** et **React.cloneElement()**
