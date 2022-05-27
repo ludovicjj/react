@@ -19,3 +19,7 @@ Création d’un [tableau de données de produits](products.jsx) proposant filtr
 ## Context
 - [Le Contexte](context.jsx) offre un moyen de partager des valeurs comme celles-ci entre des composants sans avoir à explicitement passer une prop à chaque niveau de l’arborescence. Peut être utilisé pour des composants sous forme de **fonction** et de **class**
 - [documentation des context](https://fr.reactjs.org/docs/context.html#gatsby-focus-wrapper)
+
+## Les portails
+- [Les portails](portal.jsx) fournissent une excellente solution pour afficher des composants enfants dans un nœud DOM qui existe en dehors de la hiérarchie DOM du composant parent.
+- [documentation des portails](https://fr.reactjs.org/docs/portals.html)
