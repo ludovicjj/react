@@ -5,3 +5,15 @@ tr.out {
     padding: 1rem;
     background-color: rgba(0,0,0,.2);
 }
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+}
+.fade {
+    transition: opacity 1s;
+}
+
+.fade.out {
+    opacity: 0;
+}
